@@ -14,7 +14,6 @@ const sendEmailSchema = z.object({
 
 const envSchema = z.object({
   RECEIVER_EMAIL: z.string().min(1),
-  RECEIVER_NAME: z.string().min(1),
   SENDER_EMAIL: z.string().min(1),
   SENDER_PASSWORD: z.string().min(1),
 });
