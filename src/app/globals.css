@@ -77,6 +77,10 @@ section {
 .stroke-button:before {
   transition: all .5s;
 }
+[disabled] {
+  cursor: not-allowed;
+  opacity: .5;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
