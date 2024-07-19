@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  line-height: 1.5;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightblue;
+}
+
+section {
+  height: 100dvh;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+.violet-gradient {
+  background: #1795a8;
+  background: linear-gradient(-90deg, #1795a8 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #1795a8 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+.shiny::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #24afc1;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.shiny:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #24afc1;
+}
+
+.shiny:hover {
+  color: #24afc1;
+  box-shadow: 0 0 5px #24afc1;
+  text-shadow: 0 0 5px #24afc1;
+}
+.stroke-button {
+  position: relative;
+}
+.stroke-button:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.stroke-button:hover:after {
+  width: 100%;
+}
+.stroke-button,
+.stroke-button:after,
+.stroke-button:before {
+  transition: all .5s;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .pause {
+    animation-play-state: paused;
+  }
+}
