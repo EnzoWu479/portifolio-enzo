@@ -45,8 +45,6 @@ export const sendEmail = async (
 
   const envResult = envSchema.safeParse(process.env);
   if (!envResult.success) {
-    console.log("Missing env variables");
-
     return {
       isSuccess: false,
       isServerError: true,
@@ -54,20 +52,6 @@ export const sendEmail = async (
   }
 
   try {
-    console.log(envResult.data.RECEIVER_EMAIL);
-
-    // await emailjs.send(
-    //   envResult.data.EMAILJS_SERVICE_ID,
-    //   envResult.data.EMAILJS_TEMPLATE_ID,
-    //   {
-    //     from_name: values.name,
-    //     to_name: envResult.data.RECEIVER_NAME,
-    //     from_email: values.email,
-    //     to_email: envResult.data.RECEIVER_EMAIL,
-    //     message: values.message,
-    //   },
-    //   envResult.data.EMAILJS_PUBLIC_KEY
-    // );
     await senderEmail({
       from: envResult.data.SENDER_EMAIL,
       to: envResult.data.RECEIVER_EMAIL,
