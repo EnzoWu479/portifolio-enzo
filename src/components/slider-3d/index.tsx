@@ -10,7 +10,7 @@ export const Slider3D = function <T = unknown>({
   sliderItem,
 }: Props<T>) {
   return (
-    <div className="h-[30dvh]">
+    <div className="h-[30dvh] overflow-visible scale-75 sm:scale-75 md:scale-100">
       <div
         aria-label="banner"
         className="w-full h-dvh text-center overflow-hidden relative"

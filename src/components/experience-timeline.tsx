@@ -15,7 +15,7 @@ interface Props {
 
 export const ExperienceTimeline = ({ experiences }: Props) => {
   return (
-    <div className="mt-20 flex flex-col">
+    <div className="mt-10 md:mt-20 flex flex-col">
       <VerticalTimeline>
         {experiences.map((experience, index) => (
           <VerticalTimelineElement
@@ -40,10 +40,10 @@ export const ExperienceTimeline = ({ experiences }: Props) => {
             }
             className="[&>*]:z-10"
           >
-            <h3 className="vertical-timeline-element-title text-lg">
+            <h3 className="text-base md:text-lg vertical-timeline-element-title">
               {experience.name}
             </h3>
-            <h4 className="vertical-timeline-element-subtitle text-sm text-light-blue">
+            <h4 className="text-xs md:text-sm vertical-timeline-element-subtitle text-light-blue">
               {experience.companyName}
             </h4>
             {/* <p>{experience.description}</p> */}
@@ -54,7 +54,7 @@ export const ExperienceTimeline = ({ experiences }: Props) => {
                   style={{
                     color: tag.color,
                   }}
-                  // className={`text-[${tag.color}]`}
+                  className={`text-sm md:text-base`}
                 >
                   #{tag.name}
                 </span>

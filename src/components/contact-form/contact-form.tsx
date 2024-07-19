@@ -75,7 +75,7 @@ export const ContactForm = ({ texts }: Props) => {
         <ErrorMessage>{result?.errors?.fieldErrors.message?.[0]}</ErrorMessage>
       </div>
       <Button
-        className="w-fit self-end border-light-blue"
+        className="w-fit self-center md:self-end border-light-blue"
         type="submit"
         disabled={isPending}
       >

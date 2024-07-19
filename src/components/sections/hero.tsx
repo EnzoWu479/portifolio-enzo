@@ -27,7 +27,7 @@ export const Hero = ({ texts }: Props) => {
       // className="grid grid-cols-2 px-12 max-lg:grid-cols-1 h-dvh"
       className="flex flex-col justify-center [&>*]:z-10"
     >
-      <div className="flex gap-4 items-start ml-[10%] mt-6">
+      <div className="flex gap-4 items-start mx-4 md:ml-[10%] md:mr-0 mt-6">
         <div className="flex flex-col justify-center items-center">
           <div className="w-5 h-5 rounded-full bg-black-blue" />
           <div className="w-1 sm:h-64 h-20 violet-gradient" />
@@ -67,7 +67,7 @@ export const Hero = ({ texts }: Props) => {
             <span className="text-black-blue ml-2 font-bold">Enzo Wu</span>
           </motion.span>
           <motion.h1
-            className="text-6xl font-bold z-10 max-md:text-5xl max-sm:text-3xl"
+            className="flex flex-wrap text-6xl font-bold z-10 max-md:text-5xl max-sm:text-3xl"
             variants={motionVar}
             initial={"initial"}
             viewport={{
@@ -119,7 +119,7 @@ export const Hero = ({ texts }: Props) => {
               data-tooltip-id="my-tooltip"
               data-tooltip-content="CV"
               data-tooltip-place="top"
-              className="w-fit border-light-blue"
+              className="text-sm h-10 px-2 md:px-6 md:h-12 md:text-base w-fit border-light-blue"
             >
               {texts.cvButton}
             </Button>
@@ -133,7 +133,7 @@ export const Hero = ({ texts }: Props) => {
                 data-tooltip-id="my-tooltip"
                 data-tooltip-content="Linkedin"
                 data-tooltip-place="top"
-                className="h-12 w-12 text-2xl rounded-full"
+                className="h-10 w-10 md:h-12 md:w-12 text-2xl rounded-full"
               >
                 <FaLinkedinIn />
               </ShinyButton>
@@ -145,7 +145,7 @@ export const Hero = ({ texts }: Props) => {
               rel="external"
             >
               <ShinyButton
-                className="h-12 w-12 text-2xl rounded-full"
+                className="h-10 w-10 md:h-12 md:w-12 text-2xl rounded-full"
                 data-tooltip-id="my-tooltip"
                 data-tooltip-content="Github"
                 data-tooltip-place="top"
