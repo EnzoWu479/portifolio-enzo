@@ -1,5 +1,13 @@
 import { ProjectsTexts } from "@/types/texts";
 import { tags } from "../../tags";
+import {
+  img_biblioteca,
+  img_crud,
+  img_ecommerce,
+  img_instagram,
+  img_minesweeper,
+  img_windows,
+} from "@/assets/images/projects";
 
 export const projects: ProjectsTexts = {
   title: "Projects",
@@ -14,7 +22,7 @@ export const projects: ProjectsTexts = {
         tags["PrismaORM"],
         tags["PostgreSQL"],
       ],
-      image: "/assets/images/projects/ecommerce.png",
+      image: img_ecommerce,
       height: 1024,
       width: 1024,
       github: "https://github.com/EnzoWu479/ecommerce-les",
@@ -24,7 +32,7 @@ export const projects: ProjectsTexts = {
       description:
         "Window management system made with React.js, Typescript and Next.js",
       tags: [tags["React.js"], tags["Typescript"], tags["Next.js"]],
-      image: "/assets/images/projects/windows.png",
+      image: img_windows,
       github: "https://github.com/EnzoWu479/swodniw",
       width: 1438,
       height: 737,
@@ -39,7 +47,7 @@ export const projects: ProjectsTexts = {
         tags[".NET"],
         tags["PostgreSQL"],
       ],
-      image: "/assets/images/projects/crud.png",
+      image: img_crud,
       github: "https://github.com/EnzoWu479/clientes-cadastro-esIII",
       width: 1376,
       height: 779,
@@ -48,7 +56,7 @@ export const projects: ProjectsTexts = {
       title: "Instagram Clone",
       description: "Instagram clone made with Django and jQuery.",
       tags: [tags["Django"], tags["Python"], tags["jQuery"]],
-      image: "/assets/images/projects/instagram.png",
+      image: img_instagram,
       github: "https://github.com/EnzoWu479/InstagramDjango",
     },
     {
@@ -56,8 +64,22 @@ export const projects: ProjectsTexts = {
       description:
         "Book loans management system made with Java, Swing and MongoDB.",
       tags: [tags["Java"], tags["MongoDB"]],
-      image: "/assets/images/projects/biblioteca.png",
+      image: img_biblioteca,
       github: "https://github.com/EnzoWu479/bibliotecav2",
     },
+    {
+      title: "MineSweeper",
+      description:
+        "MineSweeper game made with Next.js, Typescript, Prisma ORM and PostgreSQL",
+        tags: [
+          tags["Next.js"],
+          tags["Typescript"],
+          tags["PrismaORM"],
+          tags["PostgreSQL"],
+        ],
+      image: img_minesweeper,
+      github: "https://github.com/EnzoWu479/playground-old-games",
+    },
   ],
+  
 };
