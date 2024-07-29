@@ -118,7 +118,7 @@ export const Hero = ({ texts }: Props) => {
               }}
               data-tooltip-id="my-tooltip"
               data-tooltip-content="CV"
-              data-tooltip-place="top"
+              data-tooltip-place="bottom"
               className="text-sm h-10 px-2 md:px-6 md:h-12 md:text-base w-fit border-light-blue"
             >
               {texts.cvButton}
@@ -132,7 +132,7 @@ export const Hero = ({ texts }: Props) => {
               <ShinyButton
                 data-tooltip-id="my-tooltip"
                 data-tooltip-content="Linkedin"
-                data-tooltip-place="top"
+                data-tooltip-place="bottom"
                 className="h-10 w-10 md:h-12 md:w-12 text-2xl rounded-full"
               >
                 <FaLinkedinIn />
@@ -148,7 +148,7 @@ export const Hero = ({ texts }: Props) => {
                 className="h-10 w-10 md:h-12 md:w-12 text-2xl rounded-full"
                 data-tooltip-id="my-tooltip"
                 data-tooltip-content="Github"
-                data-tooltip-place="top"
+                data-tooltip-place="bottom"
               >
                 <TbBrandGithubFilled />
               </ShinyButton>
