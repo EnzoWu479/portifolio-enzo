@@ -2,14 +2,19 @@
 
 Bem-vindo ao meu portfólio! Este site foi desenvolvido para mostrar meus projetos, habilidades e experiência como desenvolvedor. Ele foi construído com Next.js e tailwind e inclui animações 3D com Three.js e um sistema de envio de e-mails na seção de contato utilizando Nodemailer.
 
+## Links
+
+- <a href="https://portifolio-enzo.vercel.app" target="_blank">Deploy</a>
+- <a href="https://www.linkedin.com/posts/enzo-wu_portfolio-nextjs-threejs-activity-7223451272757035008-71ZX?utm_source=share&utm_medium=member_desktop" target="_blank">Postagem no linkedin</a>
+
 ## Tecnologias Utilizadas
 
-- [Next.js](https://nextjs.org/)
-- [Three.js](https://threejs.org/)
-- [Nodemailer](https://nodemailer.com/)
-- [React](https://reactjs.org/)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- <a href="https://nextjs.org/" target="_blank">Next.js</a>
+- <a href="https://threejs.org/" target="_blank">Three.js</a>
+- <a href="https://nodemailer.com/" target="_blank">Nodemailer</a>
+- <a href="https://reactjs.org/" target="_blank">React</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
 
 ## Funcionalidades
 
