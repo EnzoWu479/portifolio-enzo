@@ -1,21 +1,17 @@
 "use client";
 
 import { ErrorMessage, Input, InputLabel } from "../ui/input";
-import { Button } from "../ui/button";
 import { ContactTexts } from "@/types/texts";
-import { useFormState } from "react-dom";
-import { sendEmail } from "./actions";
 import { cn } from "@/lib/utils";
-import { useEffect } from "react";
-import { toast } from "react-toastify";
 import { useContactForm } from "./hooks";
 import { CheckIcon } from "../icons/check";
 import { motion } from "framer-motion";
+import { ButtonForm } from "./button-form";
 interface Props {
   texts: ContactTexts;
 }
 export const ContactForm = ({ texts }: Props) => {
-  const { handleSend, isPending, result } = useContactForm();
+  const { handleSend, result } = useContactForm();
 
   if (result?.isSuccess) {
     return (
@@ -74,13 +70,7 @@ export const ContactForm = ({ texts }: Props) => {
         />
         <ErrorMessage>{result?.errors?.fieldErrors.message?.[0]}</ErrorMessage>
       </div>
-      <Button
-        className="w-fit self-center md:self-end border-light-blue"
-        type="submit"
-        disabled={isPending}
-      >
-        <span>{texts.sendButton}</span>
-      </Button>
+      <ButtonForm>{texts.sendButton}</ButtonForm>
     </form>
   );
 };

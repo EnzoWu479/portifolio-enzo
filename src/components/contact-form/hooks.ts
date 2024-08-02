@@ -1,10 +1,10 @@
-import { useFormState } from "react-dom";
+import { useFormState, useFormStatus } from "react-dom";
 import { sendEmail } from "./actions";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 
 export const useContactForm = () => {
-  const [result, handleSend, isPending] = useFormState(sendEmail, undefined);
+  const [result, handleSend] = useFormState(sendEmail, undefined);
 
   useEffect(() => {
     if (result) {
@@ -17,6 +17,5 @@ export const useContactForm = () => {
   return {
     result,
     handleSend,
-    isPending,
   };
 };
