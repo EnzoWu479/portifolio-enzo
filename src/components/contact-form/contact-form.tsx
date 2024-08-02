@@ -45,9 +45,9 @@ export const ContactForm = ({ texts }: Props) => {
           placeholder={texts.namePlaceholder}
           name="name"
           id="name"
-          error={(result?.errors?.fieldErrors.email?.length || 0) > 0}
+          error={(result?.errors?.fieldErrors.name?.length || 0) > 0}
         />
-        <ErrorMessage>{result?.errors?.fieldErrors.email?.[0]}</ErrorMessage>
+        <ErrorMessage>{result?.errors?.fieldErrors.name?.[0]}</ErrorMessage>
       </div>
       <div className="space-y-2">
         <InputLabel htmlFor="email">{texts.emailLabel}</InputLabel>
