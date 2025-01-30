@@ -27,8 +27,8 @@ export const ExperienceTimeline = ({ experiences }: Props) => {
             }}
             visible
             contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-            date={`De ${formatDate(experience.from, "MM/yy")} a ${
-              experience.to ? formatDate(experience.to, "MM/yy") : "Momento"
+            date={`From ${formatDate(experience.from, "MM/yy")} To ${
+              experience.to ? formatDate(experience.to, "MM/yy") : "Nowadays"
             } - ${countYears(experience.from, experience.to)}`}
             icon={
               <div className="bg-dark-gray h-full w-full flex rounded-full">

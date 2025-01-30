@@ -1,4 +1,3 @@
-import { IconType } from "react-icons";
 import { Tag } from "./tag";
 
 export type IconProject = "Next.js" | "React.js" | "Spring";
