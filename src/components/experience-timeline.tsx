@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { countYears, formatDate } from "@/lib/date";
+import { SiSpringboot } from "react-icons/si";
 
 interface Props {
   experiences: Experience[];
@@ -32,9 +33,11 @@ export const ExperienceTimeline = ({ experiences }: Props) => {
             icon={
               <div className="bg-dark-gray h-full w-full flex rounded-full">
                 {
-                  { "Next.js": <RiNextjsFill />, "React.js": <FaReact /> }[
-                    experience.icon
-                  ]
+                  {
+                    "Next.js": <RiNextjsFill />,
+                    "React.js": <FaReact />,
+                    Spring: <SiSpringboot />,
+                  }[experience.icon]
                 }
               </div>
             }

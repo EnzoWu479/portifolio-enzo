@@ -7,6 +7,15 @@ export const workExperience: WorkExperienceTexts = {
   title: "Work Experience",
   experiences: [
     {
+      name: "Software Engineer",
+      companyName: "Muralis",
+      description:
+        "At Muralis, I worked as a Software Engineer, utilizing Python (OpenCV, TensorFlow) for object detection, Java (Spring Boot, Spring JPA) for backend development, and Node.js (React.js, Next.js, Tailwind) for frontend applications. I applied architectural principles such as design systems, hexagonal architecture, and atomic design to ensure scalable and maintainable solutions. My responsibilities included defining task scopes, estimating efforts, and documenting knowledge for standardization and knowledge sharing. I actively collaborated with the team, encouraging discussions on technical improvements and best practices. Additionally, I aligned project updates with leadership, identified and communicated blockers, and fostered continuous feedback for technical and behavioral growth.",
+      from: "2024-08-12",
+      icon: "Spring",
+      tags: [tags["Spring"], tags["Next.js"], tags["Tensorflow"]],
+    },
+    {
       name: "Frontend Software Engineer",
       companyName: "Mestres da Web",
       description:

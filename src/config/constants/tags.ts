@@ -1,5 +1,3 @@
-import { Tag } from "@/types/tag";
-
 export const tags = {
   "Next.js": {
     name: "Next.js",
@@ -45,5 +43,12 @@ export const tags = {
     name: "MongoDB",
     color: "#13aa52",
   },
-  
+  Spring: {
+    name: "Spring",
+    color: "#42B700",
+  },
+  "Tensorflow": {
+    name: "Tensorflow",
+    color: "#F78000",
+  }
 };
